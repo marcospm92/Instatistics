@@ -2,70 +2,52 @@
 
 Estadísticas para Instagram usando la API no oficial de LevPasha.
 
-# Documentación de las funciones
+## Documentación de las funciones
 
-#################################################################################
-#                                                                               #
-#                         FUNCIÓN BÚSQUEDA DE FICHEROS                          #
-#                                                                               #
-#################################################################################
-#                                                                               #
-#   busqueda_fich(keyword, select)                                              #
-#                                                                               #
-#   Argumentos:                                                                 #
-#       - keyword: palabra clave que se buscará (string)                        #
-#       - select: índice del archivo a devolver (string)                        #
-#                                                                               #
-#   Funcionamiento:                                                             #
-#       Busca ficheros cuyo nombre coincida con el primer argumento.            #
-#       Si se le pasa un segundo argumento distinto de "", devuelve el fichero  #
-#       cuyo orden en la lista que imprime la función corresponda con el        #
-#       argumento pasado.                                                       #
-#                                                                               #
-#   Ejemplos de uso:                                                            #
-#       busqueda_fich("ejemplo", "")                                            #
-#           1 - ejemplo_a                                                       #
-#           2 - ejemplo_b                                                       #
-#           3 - ejemplo_c                                                       #
-#                                                                               #
-#       busqueda_fich("ejemplo", "2")                                           #
-#           return ejemplo_b                                                    #
-#                                                                               #
-#################################################################################
+## Función búsqueda de ficheros
+busqueda_fich(keyword, select)
 
-#################################################################################
-#                                                                               #
-#                        FUNCIÓN LOGIN Y PETICIONES API                         #
-#                                                                               #
-#################################################################################
-#                                                                               #
-#   login_peticiones()                                                          #
-#                                                                               #
-#   Argumentos:                                                                 #
-#                                                                               #
-#   Funcionamiento:                                                             #
-#       Hace login en la API y guarda en archivos posts, media likers,          #
-#       media commenters, followers, followings y actividad reciente,           #
-#       para no tener que hacer luegp muchas peticiones y saturar servidores.   #
-#                                                                               #
-#   Ejemplo de uso:                                                             #
-#       login_peticiones()                                                      #
-#           guarda:                                                             #
-#               - usuario_posts_fecha                                           #
-#               - usuario_likers_fecha                                          #
-#               - usuario_commenters_fecha                                      #
-#               - usuario_following_fecha                                       #
-#               - usuario_followers_fecha                                       #
-#               - usuario_activity_fecha                                        #
-#                                                                               #
-#################################################################################
+### Argumentos
+- keyword: palabra clave que se buscará (string)
+- select: índice del archivo a devolver (string)
 
-#################################################################################
-#                                                                               #
+### Funcionamiento
+Busca ficheros cuyo nombre coincida con el primer argumento.
+Si se le pasa un segundo argumento distinto de "", devuelve el fichero
+cuyo orden en la lista que imprime la función corresponda con el
+argumento pasado.
+
+### Ejemplos de uso
+busqueda_fich("ejemplo", "")
+  *1 - ejemplo_a*
+  *2 - ejemplo_b*
+  *3 - ejemplo_c*
+  
+busqueda_fich("ejemplo", "2")
+  *return ejemplo_b*
+
+## Función login y peticiones API
+login_peticiones()
+
+### Argumentos
+
+### Funcionamiento
+Hace login en la API y guarda en archivos posts, media likers,
+media commenters, followers, followings y actividad reciente,
+para no tener que hacer luegp muchas peticiones y saturar servidores.
+
+### Ejemplo de uso
+login_peticiones()
+  *guarda:*
+    *- usuario_posts_fecha*
+    *- usuario_likers_fecha*
+    *- usuario_commenters_fecha*
+    *- usuario_following_fecha*
+    *- usuario_followers_fecha*
+    *- usuario_activity_fecha*
+
 #                     FUNCIÓN MEDIA LIKERS Y LIKES TOTALES                      #
-#                                                                               #
-#################################################################################
-#                                                                               #
+
 #   media_likers()                                                              #
 #                                                                               #
 #   Argumentos:                                                                 #
@@ -86,15 +68,9 @@ Estadísticas para Instagram usando la API no oficial de LevPasha.
 #                                                                               #
 #   Ejemplo de uso:                                                             #
 #       media_likers()                                                          #
-#                                                                               #
-#################################################################################
 
-#################################################################################
-#                                                                               #
 #                           FUNCIÓN MEDIA COMMENTERS                            #
-#                                                                               #
-#################################################################################
-#                                                                               #
+
 #   media_commenters()                                                          #
 #                                                                               #
 #   Argumentos:                                                                 #
@@ -117,15 +93,9 @@ Estadísticas para Instagram usando la API no oficial de LevPasha.
 #                                                                               #
 #   Ejemplo de uso:                                                             #
 #       media_commenters()                                                      #
-#                                                                               #
-#################################################################################
 
-#################################################################################
-#                                                                               #
 #                        FUNCIÓN FOLLOWINGS Y FOLLOWERS                         #
-#                                                                               #
-#################################################################################
-#                                                                               #
+
 #   followings_followers()                                                      #
 #                                                                               #
 #   Argumentos:                                                                 #
@@ -141,15 +111,9 @@ Estadísticas para Instagram usando la API no oficial de LevPasha.
 #                                                                               #
 #   Ejemplo de uso:                                                             #
 #       following_followers()                                                   #
-#                                                                               #
-#################################################################################
 
-#################################################################################
-#                                                                               #
 #                     FUNCIÓN UNFOLLOWS Y NUEVOS FOLLOWERS                      #
-#                                                                               #
-#################################################################################
-#                                                                               #
+
 #   unfollows_new_followers()                                                   #
 #                                                                               #
 #   Argumentos:                                                                 #
@@ -166,15 +130,9 @@ Estadísticas para Instagram usando la API no oficial de LevPasha.
 #                                                                               #
 #   Ejemplo de uso:                                                             #
 #       unfollows_new_followers()                                               #
-#                                                                               #
-#################################################################################
 
-#################################################################################
-#                                                                               #
 #                          FUNCIÓN ACTIVIDAD RECIENTE                           #
-#                                                                               #
-#################################################################################
-#                                                                               #
+
 #   actividad()                                                                 #
 #                                                                               #
 #   Argumentos:                                                                 #
@@ -191,15 +149,9 @@ Estadísticas para Instagram usando la API no oficial de LevPasha.
 #                                                                               #
 #   Ejemplo de uso:                                                             #
 #       actividad()                                                             #
-#                                                                               #
-#################################################################################
 
-#################################################################################
-#                                                                               #
 #                   FUNCIÓN MENÚ PRINCIPAL INTERFAZ CONSOLA                     #
-#                                                                               #
-#################################################################################
-#                                                                               #
+
 #   modo_consola()                                                              #
 #                                                                               #
 #   Argumentos:                                                                 #
@@ -210,5 +162,3 @@ Estadísticas para Instagram usando la API no oficial de LevPasha.
 #                                                                               #
 #   Ejemplo de uso:                                                             #
 #       modo_consola()                                                          #
-#                                                                               #
-#################################################################################
