@@ -1,3 +1,8 @@
+__author__ = 'Marcos Pérez Martín'
+__title__= 'Instatistics'
+__date__ = '2019'
+__version__ = '1.1'
+
 # Imports y login
 
 from InstagramAPI.InstagramAPI import InstagramAPI
@@ -149,6 +154,11 @@ def login_peticiones():
                 - usuario_following_fecha
                 - usuario_followers_fecha
                 - usuario_activity_fecha """
+
+    global has_more_posts
+    global max_id
+    global likers
+    global commenters
 
     pwd = getpass.getpass("Contraseña:")
     #pwd = ""
