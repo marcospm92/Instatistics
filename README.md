@@ -4,20 +4,21 @@ Estadísticas para Instagram usando la API no oficial de LevPasha.
 
 ## Documentación de las funciones
 
-## Función búsqueda de ficheros
+
+### Función búsqueda de ficheros
 busqueda_fich(keyword, select)
 
-### Argumentos
+#### Argumentos
 - keyword: palabra clave que se buscará (string)
 - select: índice del archivo a devolver (string)
 
-### Funcionamiento
+#### Funcionamiento
 Busca ficheros cuyo nombre coincida con el primer argumento.
 Si se le pasa un segundo argumento distinto de "", devuelve el fichero
 cuyo orden en la lista que imprime la función corresponda con el
 argumento pasado.
 
-### Ejemplos de uso
+#### Ejemplos de uso
 busqueda_fich("ejemplo", "")
   *1 - ejemplo_a*
   *2 - ejemplo_b*
@@ -26,17 +27,17 @@ busqueda_fich("ejemplo", "")
 busqueda_fich("ejemplo", "2")
   *return ejemplo_b*
 
-## Función login y peticiones API
+### Función login y peticiones API
 login_peticiones()
 
-### Argumentos
+#### Argumentos
 
-### Funcionamiento
+#### Funcionamiento
 Hace login en la API y guarda en archivos posts, media likers,
 media commenters, followers, followings y actividad reciente,
 para no tener que hacer luegp muchas peticiones y saturar servidores.
 
-### Ejemplo de uso
+#### Ejemplo de uso
 login_peticiones()
   *guarda:*
     *- usuario_posts_fecha*
