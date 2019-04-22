@@ -20,11 +20,15 @@ argumento pasado.
 
 #### Ejemplos de uso
 busqueda_fich("ejemplo", "")
+
   *1 - ejemplo_a*
+  
   *2 - ejemplo_b*
+  
   *3 - ejemplo_c*
   
 busqueda_fich("ejemplo", "2")
+
   *return ejemplo_b*
 
 ### Función login y peticiones API
@@ -39,15 +43,22 @@ para no tener que hacer luegp muchas peticiones y saturar servidores.
 
 #### Ejemplo de uso
 login_peticiones()
+
   *guarda:*
+  
     *- usuario_posts_fecha*
+    
     *- usuario_likers_fecha*
+    
     *- usuario_commenters_fecha*
+    
     *- usuario_following_fecha*
+    
     *- usuario_followers_fecha*
+    
     *- usuario_activity_fecha*
 
-#                     FUNCIÓN MEDIA LIKERS Y LIKES TOTALES                      #
+### Función Media Likers y Likes totales
 
 #   media_likers()                                                              #
 #                                                                               #
