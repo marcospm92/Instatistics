@@ -45,68 +45,60 @@ para no tener que hacer luegp muchas peticiones y saturar servidores.
 login_peticiones()
 
   *guarda:*
-  
     *- usuario_posts_fecha*
-    
-    *- usuario_likers_fecha*
-    
-    *- usuario_commenters_fecha*
-    
-    *- usuario_following_fecha*
-    
-    *- usuario_followers_fecha*
-    
+    *- usuario_likers_fecha*    
+    *- usuario_commenters_fecha*   
+    *- usuario_following_fecha*   
+    *- usuario_followers_fecha*   
     *- usuario_activity_fecha*
 
 ### Función Media Likers y Likes totales
+media_likers()
 
-#   media_likers()                                                              #
-#                                                                               #
-#   Argumentos:                                                                 #
-#                                                                               #
-#   Funcionamiento:                                                             #
-#       Muestra un listado de los archivos que se pueden abrir para elegir      #
-#       uno de ellos. A partir de ese archivo se genera lo siguiente:           #
-#           - Likes totales                                                     #
-#           - Usuarios únicos que han dado like                                 #
-#           - Media de likes por usuario                                        #
-#           - Top usuarios que dan like. (Cantidad definida por n_users)        #
-#           - Número de usuarios con 1, 2, 3, ... likes                         #
-#           - Plot barras top usuarios que dan like a más posts                 #
-#           - Plot barras total de likes                                        #
-#           - Plot pie chart usuarios que dan like a más posts                  #
-#           - Plot barras número de usuarios con 1, 2, 3, ... likes             #
-#       Cada plot se puede comentar para decidir si mostrarlo o no              #
-#                                                                               #
-#   Ejemplo de uso:                                                             #
-#       media_likers()                                                          #
+#### Argumentos
 
-#                           FUNCIÓN MEDIA COMMENTERS                            #
+#### Funcionamiento
+Muestra un listado de los archivos que se pueden abrir para elegir
+uno de ellos. A partir de ese archivo se genera lo siguiente:
+- Likes totales
+- Usuarios únicos que han dado like
+- Media de likes por usuario
+- Top usuarios que dan like. (Cantidad definida por n_users)
+- Número de usuarios con 1, 2, 3, ... likes
+- Plot barras top usuarios que dan like a más posts
+- Plot barras total de likes
+- Plot pie chart usuarios que dan like a más posts
+- Plot barras número de usuarios con 1, 2, 3, ... likes
+Cada plot se puede comentar para decidir si mostrarlo o no
 
-#   media_commenters()                                                          #
-#                                                                               #
-#   Argumentos:                                                                 #
-#                                                                               #
-#   Funcionamiento:                                                             #
-#       Muestra un listado de los archivos que se pueden abrir para elegir      #
-#       uno de ellos. A partir de ese archivo se genera lo siguiente:           #
-#           - Comentarios totales                                               #
-#           - Usuarios únicos que han comentado                                 #
-#           - Media de comentarios por usuario                                  #
-#           - Top usuarios que comentan. (Cantidad definida por n_users)        #
-#           - Plot barras comentarios por día de la semana                      #
-#           - Plot barras comentarios por hora del día                          #
-#           - Plot barras comentarios por mes                                   #
-#           - Plot barras comentarios por fecha en el año actual                #
-#           - Plot barras comentarios por fecha en el mes actual (Comentado)    #
-#           - Plot barras comentarios por fecha en mes escogido                 #
-#           - Plot barras top usuarios que comentan                             #
-#       Cada plot se puede comentar para decidir si mostrarlo o no              #
-#                                                                               #
-#   Ejemplo de uso:                                                             #
-#       media_commenters()                                                      #
+#### Ejemplo de uso
+media_likers()
 
-#                        FUNCIÓN FOLLOWINGS Y FOLLOWERS                         #
+### Función Media Commenters
+media_commenters()
+
+#### Argumentos
+
+#### Funcionamiento
+Muestra un listado de los archivos que se pueden abrir para elegir
+uno de ellos. A partir de ese archivo se genera lo siguiente:
+- Comentarios totales
+- Usuarios únicos que han comentado
+- Media de comentarios por usuario
+- Top usuarios que comentan. (Cantidad definida por n_users)
+- Plot barras comentarios por día de la semana
+- Plot barras comentarios por hora del día
+- Plot barras comentarios por mes
+- Plot barras comentarios por fecha en el año actual
+- Plot barras comentarios por fecha en el mes actual (Comentado)
+- Plot barras comentarios por fecha en mes escogido
+- Plot barras top usuarios que comentan
+Cada plot se puede comentar para decidir si mostrarlo o no
+
+#### Ejemplo de uso
+media_commenters()
+
+### Función Followings y Followers
 
 #   followings_followers()                                                      #
 #                                                                               #
